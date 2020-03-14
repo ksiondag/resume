@@ -1,0 +1,114 @@
+% LaTeX resume using res.cls
+\documentclass{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font  
+\setlength{\topmargin}{-0.6in}  % Start text higher on the page 
+\setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
+\setlength{\headsep}{0.2in}     % space between header and text
+\setlength{\headheight}{12pt}   % make room for header
+\usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
+\usepackage{hyperref}
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\lhead{\hspace*{-\sectionwidth}Gregory ``Rory'' Ksionda} % force lhead all the way left
+\rhead{Page \thepage}  % put page number at right
+\cfoot{}  % the footer is empty
+\pagestyle{fancy} % set pagestyle for the document
+
+\begin{document} 
+\thispagestyle{empty} % this page does not have a header
+\name{Gregory ``Rory'' Ksionda}
+\address{ksiondag846@gmail.com\\
+(520) 329-5081\\
+\url{https://github.com/ksiondag}}
+
+
+\begin{resume}
+   
+\section{Employment} 
+\vspace{0.1in} 
+  \begin{tabbing}
+    \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+    {\bf Fullstack Engineer} \>Mixpanel, Inc.     \>August 2017-Present
+  \end{tabbing}\vspace{-5pt}      % suppress blank line after tabbing
+    \begin{itemize} % Use \item[] to prevent a bullet from appearing
+      \item[] Actively upgrading Mixpanel's implementation doucmentation tool ``Lexicon'' in the Mixpanel
+      product. Main contributor of the internal Lexicon API and Lexicon database setup. Regularly
+      coordinate with FE developers and do FE delevopment when necessary.
+    \end{itemize}
+
+  \vspace{-20pt}\begin{tabbing}
+    \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+    {\bf Software Engineer} \>Rincon Research Corp. \> May 2012-Feburary 2017
+  \end{tabbing}\vspace{-5pt}
+    \begin{itemize} % Use \item[] to prevent a bullet from appearing
+      \item[] Signal analysis using C++ and/or Python. Implemented algorithms by head electrical engineers.
+      Cleaned up legacy C++ code. Added test framework to C++/Python projects when not already present.
+    \end{itemize}
+
+  \vspace{-20pt}\begin{tabbing}
+    \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+    {\bf Casual Employee (Intern)} \>Rincon Research Corp. \> Fall 2011-May 2012
+  \end{tabbing}\vspace{-5pt}
+    \begin{itemize} % Use \item[] to prevent a bullet from appearing
+      \item[] Simulated an interface with a specific antenna model based on antenna's documented serial I/O.
+
+    \end{itemize}
+     
+  \vspace{-20pt}\begin{tabbing}
+    \hspace{2.3in}\= \hspace{2.6in}\= \kill % set up two tab positions
+    {\bf Intern} \>Rincon Research Corp. \> Summer 2011
+  \end{tabbing}\vspace{-5pt}
+    \begin{itemize} % Use \item[] to prevent a bullet from appearing
+      \item[] Teamed with a fellow computer engineer, a mechanical engineer, and a
+      physicist, created software to interact with a motorized telescope to track
+      and take pictures of the ISS with the aid of TLEs and an error-correcting UI made in Qt4.  
+    \end{itemize}
+
+  
+\section{Education}
+\vspace{0.1in} 
+  University of Arizona, Tucson, AZ  \\        
+  Bachelor of Science, Computer Engineering, May 2012   \\       
+  G.P.A. 4.0/4.0          
+
+  
+\section{Languages} 
+\vspace{0.1in}
+  {\bf Python,} 5+ years of experience
+    \begin{itemize}
+      \item Main version experience 2.7 and 3.6
+      \item Django
+    \end{itemize}
+  \vspace{-11pt}{\bf JavaScript,} 3 years of experience
+    \begin{itemize}
+      \item TypeScript, 1 year of experience
+      \item WebComponents, 1 year of experience (using \href{https://github.com/mixpanel/panel}{Mixpanel's panel}
+      framework)
+      \item React, 1 year of experience (hobbyist side-projects only)
+    \end{itemize}
+  \vspace{-11pt}{\bf C++,} 1 year of experience\\
+  {\bf PostgreSQL,} 1 year of experience
+    \begin{itemize}
+      \item Often used in conjunction with Django
+      \item Basic understanding of the fundamentals of a relational database
+    \end{itemize}
+
+ 
+\section{Hobbyist Projects}
+All project code available on GitHub account: \url{https://github.com/ksiondag}
+  \begin{itemize}
+    \item \href{https://github.com/ksiondag/base_webapp}{base\_webapp}: a Django-backend, React-frontend
+    base for various project ideas.
+    \item \href{https://github.com/ksiondag/pygame_skeleton}{pygame\_skeleton}: a basic skeleton to dive
+    into a pygame project (made to help a friend get into programming)
+    \item \href{https://github.com/ksiondag/browsing_costs}{browsing\_costs}: first React attempt, a
+    Chrome extension that gamifies site-blocking
+    \item \href{https://github.com/ksiondag/gamejam_clone}{gamejam\_clone}: a point and click platformer,
+    browser-based game
+    \item \href{https://github.com/ksiondag/gamejam_train}{gamejam\_train}: a text adventure time-travel
+    game written in node.js, using git as the mechanics of time-travel
+  \end{itemize}
+\vspace{0.1in} 
+ 
+\end{resume}
+\end{document}
