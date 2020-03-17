@@ -8,6 +8,7 @@
 \setlength{\headheight}{12pt}   % make room for header
 \usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
 \usepackage{hyperref}
+\renewcommand{\familydefault}{\sfdefault}
 \renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
 \lhead{\hspace*{-\sectionwidth}Gregory ``Rory'' Ksionda} % force lhead all the way left
 \rhead{Page \thepage}  % put page number at right
@@ -17,15 +18,15 @@
 \begin{document} 
 \thispagestyle{empty} % this page does not have a header
 \name{Gregory ``Rory'' Ksionda}
-\address{ksiondag846@gmail.com\\
+\address{\url{https://github.com/ksiondag}\\
+ksiondag846@gmail.com\\
 (520) 329-5081\\
-\url{https://github.com/ksiondag}\\
 Seattle, WA}
 
 
 \begin{resume}
    
-\section{Employment} 
+\section{Employment/Education} 
 \vspace{-0.1in} 
   \begin{tabbing}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
@@ -36,47 +37,60 @@ Seattle, WA}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
     {\bf Software Engineer} \>{\bf Rincon Research Corp.} \> May 2012-Feburary 2017
   \end{tabbing}\vspace{-5pt}
+
   \vspace{-20pt}\begin{tabbing}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
-    {\bf Casual Employee (Intern)} \>{\bf Rincon Research Corp.} \> Summer 2011-May 2012
+    {\bf BS in Computer Enineering} \>{\bf University of Arizona} \> August 2008-May 2012\\
+    \>{\bf GPA 4.0/4.0}
   \end{tabbing}\vspace{-5pt}
 
+
 \section{Professional Projects}
-  {\bf Lexicon (Mixpanel, June 2018-Present)}: Actively upgrading Mixpanel's implementation doucmentation tool
-  in the Mixpanel product. Developing an internal REST API in Python with Django, and developing an UI with
-  TypeScript and WebComponents.
+  {\bf Data Governance (Mixpanel, June 2018-Present)}:
+  \href{https://help.mixpanel.com/hc/en-us/articles/360001307806-Lexicon-Overview}{Lexicon} allows Mixpanel 
+  users to document their tracking implementation so when other users use the project, they have more
+  context on what the events and charts mean. Worked on the REST APIs in Python (Django), implemented the
+  frontend with TypeScript and WebComponents. Iterated on user feedback in 2 week sprints and prioritized
+  features by analyzing usage dashboard. Over a 3 month period, Lexicon experienced a 10X growth in WAU
+  (weekly active users) with healthy retention.
 
-  {\bf RBAC (Rincon, 2016)}: Ugraded an internal documentation-access tool using an RBAC-sytem made in Django.
-  Fixed a broken testing implementation and created test for each updated bit of code. The tool
-  verified: project-access, up-to-date training, and other valid role prerequisites. 
+  {\bf Access Permissions (Rincon, 2016)}: An internal tool asigned roles to users, which gave them access
+  to specific internal urls and documents based on project-access, up-to-date training, and manager approval.
+  Ugraded this using an RBAC-system made in Python (Django). Updated the jQuery UI to allow for the creation
+  of custom roles with given permissions and prerequisites. Admins no longer had to ask engineers to hard-code
+  various constraints.
 
-  {\bf Code-Health (Rincon, 2015)}: Developed  testing infrastructure in Python which would allow for 
-  known-failing tests. The idea was to decouple tests from bug fixes, and measure error-prone code.
+  {\bf Code-Health (Rincon, 2015)}: A project was given engineering resources just to create tests.
+  Developed testing infrastructure in Python which would allow for known failing tests. Any code
+  that broke previously passing tests was not allowed to be deployed. Tests that were fixed were
+  presented to user on deploy. Allowed new broken test creation, which decoupled creating tests and fixing tests.
 
-  {\bf USRP (Rincon, 2013)}: Developed the software for a signal analysis experiment that synced radio collection across
-  an arbitrary number of USRPs (Universal Software Defined Radios). General collection loop created in Python,
-  with some very specific timing code made in C++.
-
-  {\bf Telescope (Rincon, Summer 2011)}: Internship with a fellow computer engineer, a mechanical engineer, and a
-  physicist, created software in Python to interact with a motorized telescope to track
-  and take pictures of the ISS with the aid of TLEs and an error-correcting UI made in Qt4.
+  {\bf Noise Reduction (Rincon, 2013)}: An experiment to see if time-calibrated but not space-calibrated
+  radios could minimize the noise of close antennas to listen to antennas further away. As main code developer,
+  used Python/C++ (GNU Radio) to sync radio collection across an arbitrary number of USRPs (Universal Software
+  Defined Radios). Verified the ability to locate further antennas via geo-location using setup.
 \vspace{0.1in}
     
  
 \section{Hobbyist Projects}
-All project code available on GitHub account: \url{https://github.com/ksiondag}
-  \begin{itemize}
-    \item[] {\bf \href{https://github.com/ksiondag/base_webapp}{base\_webapp}}: a Django-backend, React-frontend
-    base for various project ideas.
-    \item[] {\bf \href{https://github.com/ksiondag/pygame_skeleton}{pygame\_skeleton}}: a basic skeleton to dive
-    into a pygame project (made to help a friend get into programming).
-    \item[] {\bf \href{https://github.com/ksiondag/browsing_costs}{browsing\_costs}}: first React attempt, a
-    Chrome extension that gamifies site-blocking.
-    \item[] {\bf \href{https://github.com/ksiondag/gamejam_clone}{gamejam\_clone}}: a point and click platformer,
-    browser-based game.
-    \item[] {\bf \href{https://github.com/ksiondag/gamejam_train}{gamejam\_train}}: a text adventure time-travel
-    game written in node.js, using git as the mechanics of time-travel.
-  \end{itemize}
+  {\bf \url{https://github.com/ksiondag/base_webapp}}\\
+  A Django-backend, React-frontend base for various project ideas
+
+  \vspace{-5pt}
+  {\bf \url{https://github.com/ksiondag/pygame_skeleton}}\\
+  A basic skeleton to dive into a pygame project (made to help a friend get into programming)
+
+  \vspace{-5pt}
+  {\bf \url{https://github.com/ksiondag/browsing_costs}}\\
+  First React attempt, a Chrome extension that gamifies site-blocking
+
+  \vspace{-5pt}
+  {\bf \url{https://github.com/ksiondag/gamejam_clone}}\\
+  A point-and-click platformer, browser-based game
+
+  \vspace{-5pt}
+  {\bf \url{https://github.com/ksiondag/gamejam_train}}\\
+  A text adventure time-travel game written in node.js, using git as the mechanics of time-travel
 \vspace{0.1in}
 
   
@@ -84,15 +98,8 @@ All project code available on GitHub account: \url{https://github.com/ksiondag}
 \vspace{0.1in}
   {\bf Python (2.7 and 3.6),} 5+ years of experience\\
   {\bf JavaScript/TypeScript,} 3 years of experience\\
-  {\bf PostgreSQL,} 1 year of experience\\
-  {\bf C++,} 1 year of experience
-  
-\section{Education}
-\vspace{0.1in} 
-  University of Arizona, Tucson, AZ  \\        
-  Bachelor of Science, Computer Engineering, May 2012   \\       
-  G.P.A. 4.0/4.0          
-    
+  {\bf MySQL,} 1 year of experience\\
+  {\bf C++,} 1 year of experience    
  
 \end{resume}
 \end{document}
