@@ -19,98 +19,111 @@
 \thispagestyle{empty} % this page does not have a header
 \name{Gregory ``Rory'' Ksionda}
 \address{\url{https://github.com/ksiondag}\\
-ksiondag846@gmail.com\\
-(520) 329-5081\\
-Seattle, WA}
+  ksiondag846@gmail.com\\
+  (520) 329-5081\\
+  Chicago, IL}
 
 
 \begin{resume}
-   
-\section{Employment/Education} 
-\vspace{-0.1in} 
+
+  \section{Employment/Education}
+  \vspace{-0.1in}
   \begin{tabbing}
+    \hspace{2.2in}\= \hspace{2.2in}\= \kill
+    {\bf Senior Software Engineer} \> {\bf Clarix Imaging}     \>December 2023-Present
+  \end{tabbing}\vspace{-5pt}
+  
+  \vspace{-20pt}\begin{tabbing}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
     {\bf Fullstack Engineer} \> {\bf Recurrency, Inc.}     \>June 2021-July 2022
   \end{tabbing}\vspace{-5pt}
-
+  
   \vspace{-20pt}\begin{tabbing}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
     {\bf Fullstack Engineer} \> {\bf Mixpanel, Inc.}     \>August 2017-June 2021
   \end{tabbing}\vspace{-5pt}
-
+  
   \vspace{-20pt}\begin{tabbing}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
     {\bf Software Engineer} \>{\bf Rincon Research Corp.} \> May 2012-Feburary 2017
   \end{tabbing}\vspace{-5pt}
-
+  
   \vspace{-20pt}\begin{tabbing}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
     {\bf BS in Computer Enineering} \>{\bf University of Arizona} \> August 2008-May 2012\\
     \>{\bf GPA 4.0/4.0}
   \end{tabbing}\vspace{-5pt}
-
-
-\section{Professional Projects}
-  {\bf Sales Quote/Order Flow (Recurrency, June 2021-June 2022)}:
+  
+  
+  \section{Professional Projects}
+   {\bf Pipeline Runner (Clarix Imaging, January 2023-Present)}:
+  Converted manual build processes to automatic scripts. Set up BitBucket Pipeline Runner to build project
+  and run tests on creation/update of PR in BitBucket. Process automatically starts and stops a Google Cloud VM
+  to run tests on.
+  
+    {\bf Sales Quote/Order Flow (Recurrency, June 2021-June 2022)}:
   \href{https://www.recurrency.com/}{Recurrency} is an ERP integration tool that allows warehouses to automate
   a lot of the manual and tedious aspects of using old ERP legacy software. Took ownership of the sales quote/order
   flow, which allows users to input a customer's quote or order from Recurrency's interface and have that order be submitted
   to the ERP directly. Using Recurrency directly was a faster and more data-rich experience than directly using the ERP.
   Worked up and down the stack from a TypeScript React frontend, through a node.js api, to a Python layer which interacted with
   SQL, MongoDB, and Snowflake data sources. Improved speed, reliability, and UX of the service.
-
-  {\bf Data Governance (Mixpanel, June 2018-June 2021)}:
+  
+    {\bf Data Governance (Mixpanel, June 2018-June 2021)}:
   \href{https://help.mixpanel.com/hc/en-us/articles/360001307806-Lexicon-Overview}{Lexicon} allows Mixpanel 
   users to document their tracking implementation so when other users use the project, they have more
   context on what the events and charts mean. Worked on the REST APIs in Python (Django), implemented the
   frontend with TypeScript and \href{https://github.com/mixpanel/panel}{WebComponents}. Iterated on user
   feedback in 2 week sprints and prioritized features by analyzing usage dashboard. Over a 3 month period,
   Lexicon experienced a 10X growth in WAU (weekly active users) with healthy retention.
-
-  {\bf Access Permissions (Rincon, 2016)}: An internal tool asigned roles to users, which gave them access
+  
+    {\bf Access Permissions (Rincon, 2016)}: An internal tool asigned roles to users, which gave them access
   to specific internal urls and documents based on project-access, up-to-date training, and manager approval.
   Upgraded this using an RBAC-system made in Python (Django). Updated the jQuery UI to allow for the creation
   of custom roles with given permissions and prerequisites. Admins no longer had to ask engineers to hard-code
   various constraints.
-
-  {\bf Code-Health (Rincon, 2015)}: A project was given engineering resources just to create tests.
-  Developed testing infrastructure in Python which would allow for known failing tests. Any code
-  that broke previously passing tests was not allowed to be deployed. Tests that were fixed were
-  presented to user on deploy. Allowed new broken test creation, which decoupled creating tests and fixing tests.
-
+  
+  %   {\bf Code-Health (Rincon, 2015)}: A project was given engineering resources just to create tests.
+  % Developed testing infrastructure in Python which would allow for known failing tests. Any code
+  % that broke previously passing tests was not allowed to be deployed. Tests that were fixed were
+  % presented to user on deploy. Allowed new broken test creation, which decoupled creating tests and fixing tests.
+  
   % {\bf Noise Reduction (Rincon, 2013)}: An experiment to see if time-calibrated but not space-calibrated
   % radios could minimize the noise of close antennas to listen to antennas further away. As main code developer,
   % used Python/C++ (GNU Radio) to sync radio collection across an arbitrary number of USRPs (Universal Software
   % Defined Radios). Verified the ability to locate further antennas via geo-location using setup.
-\vspace{0.1in}
-    
- 
-\section{Hobbyist Projects}
-  {\bf \url{https://github.com/ksiondag/paid-off-for-life-ynab-extension}}\\
+  \vspace{0.1in}
+  
+  
+  \section{Hobbyist Projects}
+   {\bf \url{https://github.com/ksiondag/paid-off-for-life-ynab-extension}}\\
   A SPA extension to YNAB (You Need a Budget) that calculates "safe withdrawal rates" and sees gives user insight to how
   much spending is "paid off for life" and how much more saving is necessary to fully live off investment income based on
   current spending habits.
-
+  
   \vspace{-5pt}
   {\bf \url{https://github.com/ksiondag/browsing_costs}}\\
   First React attempt, a Chrome extension that gamifies site-blocking
-
+  
   \vspace{-5pt}
   {\bf \url{https://github.com/ksiondag/gamejam_clone}}\\
   A point-and-click platformer, browser-based game
-
-  \vspace{-5pt}
-  {\bf \url{https://github.com/ksiondag/gamejam_train}}\\
-  A text adventure time-travel game written in node.js, using git as the mechanics of time-travel
-\vspace{0.1in}
-
   
-\section{Languages} 
-\vspace{0.1in}
+  % \vspace{-5pt}
+  % {\bf \url{https://github.com/ksiondag/gamejam_train}}\\
+  % A text adventure time-travel game written in node.js, using git as the mechanics of time-travel
+  % \vspace{0.1in}
+  
+  
+  \section{Languages/Frameworks}
+  \vspace{0.1in}
   {\bf Python (2.7 and 3.X),}
+  {\bf Django,}
   {\bf JavaScript/TypeScript,}
-  {\bf MySQL,}
+  {\bf React,}
+  {\bf SQL,}
+  {\bf MongoDB,}
   {\bf C++}
- 
+  
 \end{resume}
 \end{document}
