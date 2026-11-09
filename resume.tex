@@ -18,6 +18,7 @@
 \begin{document} 
 \thispagestyle{empty} % this page does not have a header
 \name{Gregory ``Rory'' Ksionda}
+% TODO [Doc #0, Sonali]: Add a LinkedIn link alongside GitHub if desired.
 \address{\url{https://github.com/ksiondag}\\
   ksiondag846@gmail.com\\
   (929) 726-6214\\
@@ -26,100 +27,180 @@
 
 \begin{resume}
 
-  \section{Employment/Education}
-  \vspace{-0.1in}
-  \begin{tabbing}
+    % TODO [Doc #2, Sonali]: Add RC under Employment/Education with accurate dates/details.
+    % TODO [Doc #3, Sonali]: Verify role dates. The reviewed draft overlapped Meta
+    % and Height; this version starts Meta in January 2025, so that overlap is gone.
+    % TODO [Doc #5, Sonali]: Prepare a truthful one-sentence explanation for each
+    % short stint (interview prep); mention Height's shutdown only if applicable.
+    % Review note [Doc #1]: Export formatting loss was explicitly not feedback.
+    \section{Employment/Education}
+    \vspace{-0.1in}
+    \begin{tabbing}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
     {\bf Senior Software Engineer} \> {\bf Meta}     \>January 2025-August 2026
-  \end{tabbing}\vspace{-5pt}
+    \end{tabbing}\vspace{-5pt}
 
-  \vspace{-20pt}\begin{tabbing}
+    \vspace{-20pt}\begin{tabbing}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
     {\bf Software Engineer} \> {\bf Height}     \>November 2023-November 2024
-  \end{tabbing}\vspace{-5pt}
+    \end{tabbing}\vspace{-5pt}
 
-  \vspace{-20pt}\begin{tabbing}
+    \vspace{-20pt}\begin{tabbing}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
     {\bf Senior Software Engineer} \> {\bf Clarix Imaging}     \>December 2022-August 2023
-  \end{tabbing}\vspace{-5pt}
+    \end{tabbing}\vspace{-5pt}
   
-  \vspace{-20pt}\begin{tabbing}
+    \vspace{-20pt}\begin{tabbing}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
     {\bf Fullstack Engineer} \> {\bf Recurrency, Inc.}     \>June 2021-July 2022
-  \end{tabbing}\vspace{-5pt}
+    \end{tabbing}\vspace{-5pt}
   
-  \vspace{-20pt}\begin{tabbing}
+    \vspace{-20pt}\begin{tabbing}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
     {\bf Fullstack Engineer} \> {\bf Mixpanel, Inc.}     \>August 2017-June 2021
-  \end{tabbing}\vspace{-5pt}
+    \end{tabbing}\vspace{-5pt}
   
-  \vspace{-20pt}\begin{tabbing}
+    \vspace{-20pt}\begin{tabbing}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
     {\bf Software Engineer} \>{\bf Rincon Research Corp.} \> May 2012-Feburary 2017
-  \end{tabbing}\vspace{-5pt}
+    \end{tabbing}\vspace{-5pt}
   
-  \vspace{-20pt}\begin{tabbing}
+    \vspace{-20pt}\begin{tabbing}
     \hspace{2.2in}\= \hspace{2.2in}\= \kill
     {\bf BS in Computer Enineering} \>{\bf University of Arizona} \> August 2008-May 2012\\
     \>{\bf GPA 4.0/4.0}
-  \end{tabbing}\vspace{-5pt}
+    \end{tabbing}\vspace{-5pt}
   
   
-  \section{Professional Projects}
-   {\bf AI-Powered QA Tool (Meta, 2026)}:
-  Implemented an AI-powered QA tool for the Meta Reservation Ads product, able to both fix
-  identified bugs and implement working features from design input by iteratively checking its
-  own work.
-  \vspace{-8pt}
+    % TODO [Doc #6, Sonali]: Review recency weighting: Meta should receive the
+    % most specific coverage. This version already adds a second Meta project.
+    % Add accurate month/year ranges where useful (Height still has only a year).
+    % TODO [Doc #7, Sonali]: Verify the new Rincon entries address the missing
+    % experience feedback; Noise Reduction now supports the C++ experience.
+    \section{Professional Projects}
+    % TODO [Doc #8, Sonali]: Review this revised QA story for actual stack/model
+    % or framework, users/adoption, and measured impact (bugs or QA time saved).
+    % Ownership and verification details are now present. Use only known facts;
+    % the suggested rewrite described an older draft, not necessarily this tool.
+    {\bf AI-Powered QA Tool (Meta, March 2026)}:
+    Designed and implemented an AI agnostic QA tool for the Brand Ads Campaign
+    Planner product. Seeded with context on the Hack and JavaScript layers,
+    it would check latest PRs against the given codebase, check the project
+    Google docs, and run QA verifying that the PRs worked as intended and
+    look for potential edge cases, and add a QA report for review to the
+    main project doc with bug reproduction steps and screenshots.
+    \vspace{-8pt}
 
-   {\bf Task Deduplication AI (Height, 2024)}:
-  Built an AI-powered deduplication feature for Height's task management software, using
-  language-model similarity matching to flag likely-duplicate tasks in real time and reduce
-  clutter across teams' task boards.
-  \vspace{-8pt}
+    {\bf Meta Moment Maker (Meta, June-August 2025, April-May 2026)}:
+    Tech lead on Meta Moment Maker in 2025 and front end lead on Meta Moment
+    Maker Max in 2026. In 2025, designed and implemented the Meta Momement
+    Maker product into Brand Ads Campaign Planner. Prioritized a lean,
+    FE-only proof-of-concept leveraging Meta's Auction prediction
+    simulation built for our Reservation product. Piloted as a sales-tool,
+    it unlocked \$100M ARR and greenlit customer-facing Meta Moment Maker
+    Max product work in 2026. In 2026, created AI tooling to automatically
+    implement visual design. "First ever engineering implementation of a
+    design before design was approved."
+    \vspace{-8pt}
 
-   {\bf Pipeline Runner (Clarix Imaging, January 2023-Present)}:
-  Converted manual build processes to automatic scripts. Set up BitBucket Pipeline Runner to build project
-  and run tests on creation/update of PR in BitBucket. Process automatically starts and stops a Google Cloud VM
-  to run tests on.
-  
+    % TODO [Doc #9, Sonali]: Specify the actual model/embeddings and similarity
+    % search stack; replace or substantiate 'reduce clutter' with known results.
+    % If available, include duplicate rate, precision/acceptance, and user reach;
+    % do not invent metrics to fill the reviewer's example placeholders.
+    {\bf Task Deduplication AI (Height, 2024)}:
+    Built an AI-powered deduplication feature for Height's task management software, using
+    language-model similarity matching to flag likely-duplicate tasks in real time and reduce
+    clutter across teams' task boards.
+    \vspace{-8pt}
+
+    % TODO [Doc #4, Sonali]: Verify the corrected project end date (August 2023).
+    % TODO [Doc #10, Sonali]: Consider a short explanation of Clarix's product
+    % and whether product work belongs here. This revision already adds CI
+    % context, testing frequency, and cost; validate those claims rather than
+    % copying the old suggested rewrite (which describes different compute use).
+    % TODO [Doc #11, Rory]: Consider including the follow-up Qt-to-React webapp
+    % consulting work, with separate accurate dates, instead of weaker hobby work.
+    % Review note [Doc #12]: Bitbucket capitalization is already corrected here.
+    {\bf Pipeline Runner (Clarix Imaging, January 2023-August 2023)}:
+    Clarix's testing process was a quarterly, spreadsheet-driven system that ate
+    up weeks of engineering time. Converted manual-in-QT-IDE build processes to
+    automatic scripts, implemented foundational Gherkins testing infrastructure
+    using Squish. Set up Bitbucket Pipeline Runner to build project and run
+    tests on creation/update of PR. Replaced unused, \$1000-per-month GCP server
+    with in-office compute. Tests went from running quarterly to running per PR.
+
+    % TODO [Doc #13, Sonali]: Consider concise ERP/product context if needed;
+    % the old repetitive 'manual ... old ERP legacy software' sentence is gone.
+    % TODO [Doc #14, #16, Sonali]: Verify the revised latency claim has evidence
+    % and clearly states what was measured. It now replaces the old unmeasured
+    % 'faster and more data-rich' and vague speed/reliability/UX claims.
+    % Review note [Doc #15]: 'node.js api' is absent in this revision; if restored,
+    % use 'Node.js API'.
     {\bf Sales Quote/Order Flow (Recurrency, June 2021-June 2022)}:
-  \href{https://www.recurrency.com/}{Recurrency} is an ERP integration tool that allows warehouses to automate
-  a lot of the manual and tedious aspects of using old ERP legacy software. Took ownership of the sales quote/order
-  flow, which allows users to input a customer's quote or order from Recurrency's interface and have that order be submitted
-  to the ERP directly. Using Recurrency directly was a faster and more data-rich experience than directly using the ERP.
-  Worked up and down the stack from a TypeScript React frontend, through a node.js api, to a Python layer which interacted with
-  SQL, MongoDB, and Snowflake data sources. Improved speed, reliability, and UX of the service.
+    Created an experience that made multiple minute-long loading sessions into
+    sub-100ms experiences for our customers. Took ownership of the sales
+    quote/order flow, which allows users to input a customer's quote or order
+    from Recurrency's interface and have that order be submitted to the ERP
+    directly. Designed and implemented the React FE, wired it through our
+    expressjs routing layer, through to a reverse-engineered system that
+    recalculated pricing, contract rules on our servers to match the Prophet 21
+    ERP system. Plugged into the Prophet 21 Microsoft SQL Server to use
+    historical pricing and contract results as playback tests for our reverse
+    engineered setup.
   
+    % TODO [Doc #17, Sonali]: Consider trimming this older entry to make room
+    % for recent Meta work while retaining the supported 10X WAU result.
+    % Review note [Doc #18]: 'Web Components' capitalization is already corrected.
     {\bf Data Governance (Mixpanel, June 2018-June 2021)}:
-  \href{https://help.mixpanel.com/hc/en-us/articles/360001307806-Lexicon-Overview}{Lexicon} allows Mixpanel 
-  users to document their tracking implementation so when other users use the project, they have more
-  context on what the events and charts mean. Worked on the REST APIs in Python (Django), implemented the
-  frontend with TypeScript and \href{https://github.com/mixpanel/panel}{WebComponents}. Iterated on user
-  feedback in 2 week sprints and prioritized features by analyzing usage dashboard. Over a 3 month period,
-  Lexicon experienced a 10X growth in WAU (weekly active users) with healthy retention.
+    \href{https://help.mixpanel.com/hc/en-us/articles/360001307806-Lexicon-Overview}{Lexicon}
+    allows Mixpanel users to document their tracking implementation so when
+    other users use the project, they have more context on what the events and
+    charts mean. Worked on the REST APIs in Python (Django), implemented the
+    frontend with TypeScript and
+    \href{https://github.com/mixpanel/panel}{Web Components}. Iterated on user
+    feedback in 2 week sprints and prioritized features by analyzing usage
+    dashboard. Over a 3 month period, Lexicon experienced a 10X growth in WAU
+    (weekly active users) with healthy retention.
   
-  %   {\bf Code-Health (Rincon, 2015)}: A project was given engineering resources just to create tests.
-  % Developed testing infrastructure in Python which would allow for known failing tests. Any code
-  % that broke previously passing tests was not allowed to be deployed. Tests that were fixed were
-  % presented to user on deploy. Allowed new broken test creation, which decoupled creating tests and fixing tests.
+    {\bf Code-Health (Rincon, 2015)}: A project was given engineering resources
+    just to create tests. Developed testing infrastructure in Python which
+    would allow for known failing tests. Any code that broke previously passing
+    tests was not allowed to be deployed. Tests that were fixed were presented
+    to user on deploy. Allowed new broken test creation, which decoupled
+    creating tests and fixing tests.
   
-  % {\bf Noise Reduction (Rincon, 2013)}: An experiment to see if time-calibrated but not space-calibrated
-  % radios could minimize the noise of close antennas to listen to antennas further away. As main code developer,
-  % used Python/C++ (GNU Radio) to sync radio collection across an arbitrary number of USRPs (Universal Software
-  % Defined Radios). Verified the ability to locate further antennas via geo-location using setup.
+    {\bf Noise Reduction (Rincon, 2013)}: An experiment to see if
+    time-calibrated but not space-calibrated radios could minimize the noise of
+    close antennas to listen to antennas further away. As main code developer,
+    used Python/C++ (GNU Radio) to sync radio collection across an arbitrary
+    number of USRPs (Universal Software Defined Radios). Verified the ability
+    to locate further antennas via geo-location using setup.
   \vspace{0.1in}
   
   
+  % TODO [Doc #19, Sonali]: Lead hobby entries with project names, not raw URLs;
+  % include accurate month/year dates and stack (especially Paid Off for Life).
+  % TODO [Doc #22, Sonali; #11, Rory]: Consider replacing the weakest hobby
+  % entries with RC or additional professional projects; choose based on substance.
   \section{Hobbyist Projects}
-   {\bf \url{https://github.com/ksiondag/paid-off-for-life-ynab-extension}}\\
-  A SPA extension to YNAB (You Need a Budget) that calculates "safe withdrawal rates" and gives user insight to how
-  much spending is "paid off for life" and how much more saving is necessary to fully live off investment income based on
-  current spending habits.
+   % TODO: Latte art simulator
+   {\bf \url{https://github.com/ksiondag/fnxsnake}}\\
+   A Snake clone written in 6502 assembly.
+
+   \vspace{-5pt}
+   {\bf \url{https://github.com/ksiondag/paid-off-for-life-ynab-extension}}\\ A
+   % TODO [Doc #20, Sonali]: Check quote typography for 'safe withdrawal rates'
+   % and 'paid off for life'; the doc fix does not establish correct LaTeX quotes.
+   SPA extension to YNAB (You Need a Budget) that calculates "safe withdrawal
+   rates" and gives user insight to how much spending is "paid off for life"
+   and how much more saving is necessary to fully live off investment income
+   based on current spending habits.
   
-  \vspace{-5pt}
-  {\bf \url{https://github.com/ksiondag/browsing_costs}}\\
-  First React attempt, a Chrome extension that gamifies site-blocking
+  % \vspace{-5pt}
+  % {\bf \url{https://github.com/ksiondag/browsing_costs}}\\
+  % TODO [Doc #21, Sonali]: If restoring this entry, omit 'First React attempt';
+  % describe the functionality, or leave the project out.
+  % First React attempt, a Chrome extension that gamifies site-blocking
   
   \vspace{-5pt}
   {\bf \url{https://github.com/ksiondag/gamejam_clone}}\\
@@ -131,15 +212,19 @@
   % \vspace{0.1in}
   
   
+  % TODO [Doc #23, Sonali]: Consider grouping skills as Languages / Frameworks /
+  % Data / Infrastructure / AI. Add only skills genuinely supported by your work:
+  % reviewer candidates were Node.js, Snowflake, Google Cloud, Bitbucket Pipelines/CI,
+  % Web Components, and the actual AI tools used at Meta/Height. C++ is now
+  % supported by the Rincon entry, if you want to list it again.
+  % Review note [Doc #24]: The dated Python '(2.7 and 3.X)' suffix is already gone.
   \section{Languages/Frameworks}
   \vspace{0.1in}
-  {\bf Python (2.7 and 3.X),}
+  {\bf Python,}
   {\bf Django,}
   {\bf JavaScript/TypeScript,}
   {\bf React,}
-  {\bf SQL,}
-  {\bf MongoDB,}
-  {\bf C++}
+  {\bf SQL}
   
 \end{resume}
 \end{document}
